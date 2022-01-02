@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     font-family: "Open Sans", sans-serif;
+     background-image: linear-gradient(to right bottom, #e1e6ed, #e0dfeb, #e3d6e5, #e9ced8, #ebc7c7);
+}
+
+h2{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  text-align: center;
+  margin-top: 9rem;
+  
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content:stretch;
+  background-color: white;
+  margin: 0 1rem 2rem 1rem;
+}
+
+.card img{
+  height: 80%;
+}
+
+.card p{
+ margin-top: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card a{
+  text-decoration: none;
+  padding: 5px;
+  background-color: #CD5C5C;
+}
+
+.card a::after{
+  position: absolute;
+  content: ">";
+  size: 220px;
+  margin-left: 2rem;
+  transition: all .5s;
+  opacity: 0;
+}
+
+.card a:hover::after{
+  opacity: 1;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.text {
+  padding: 2px 16px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.search{
+  text-align: center;
+  margin-bottom: 5rem;
+  height: 40px;
+  font-size: 1.2em;
+  padding: 0px 10px;
+  font-size: large;
+  margin-top: 2rem;
+  text-align: center;
+}
+.search::after{
+  content: "____________________________________________";
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin-left:36%;
+  margin-top: 2rem;
+}
+
+
+.label{
+  margin-right: 10px;
+}
+
+input{
+  height: 1.6rem;
+  width: 10rem;
+}
+
+.s_btn{
+  padding: 0 2rem;
+  width: 0 2rem;
+  font-size: large;
+  margin-top: 1rem ;
+  text-decoration: none;
+  background-color: #CD5C5C;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.s_btn:hover{
+  background-color: #da6969; 
+}
